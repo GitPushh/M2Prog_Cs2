@@ -87,13 +87,18 @@ namespace Functions
 
         }
 
-        
+        internal string GetVraag(int vraagIndex)
+        {
+            return vragen[vraagIndex];
+
+        }
 
         internal string GetRandomVraag()
         {
             int randomNumber = rnd.Next(1, 4);
 
-            return vragen[randomNumber];
+            return GetVraag(randomNumber);
+            
         }
     }
 }
