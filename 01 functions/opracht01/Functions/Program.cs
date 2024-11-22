@@ -15,10 +15,10 @@ namespace Functions
 
         string[] vragen = new string[]
         {
-            "TestVraag",
+            "Which spooky 2001 GameCube game starring Mario’s brother got a reboot for Nintendo Switch in 2019?\r\n",
             "What is the worst game you played but that you liked anyway?",
-            "fffff",
-            "What is the worst game you played but that you liked anyway?fff",
+            "In May 2022, the government of what European nation banned its employees from using American gaming terms such as \"e-sports,\" instead using their domestic language counterparts like \"jeu video de competition?",
+            "What is thought to be the first video game, created in 1958 and becoming popular in the 1970s?",
 
         };
 
@@ -33,6 +33,11 @@ namespace Functions
 
         internal void Run()
         {
+            AskRandomQuestions();
+            AskRandomQuestions();
+            AskRandomQuestions();
+            AskRandomQuestions();
+
 
             string vraag0 = GetRandomVraag();
             
@@ -99,6 +104,17 @@ namespace Functions
 
             return GetVraag(randomNumber);
             
+        }
+
+        internal string AskRandomQuestions()
+        {
+            string random = GetRandomVraag();
+            Console.WriteLine(random);
+            string antwoord =  Console.ReadLine();
+            Console.WriteLine(antwoord);
+
+            return antwoord;
+
         }
     }
 }
