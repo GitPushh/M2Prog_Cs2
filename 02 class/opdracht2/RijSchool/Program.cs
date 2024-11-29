@@ -64,6 +64,8 @@ namespace RijSchool
                 afnameDatum = DateTime.Now,
             };
 
+          
+
 
 
 
@@ -83,6 +85,18 @@ namespace RijSchool
                 tijd = 1130,
                 student = student
 
+            };
+            Lesuur lesUur2 = new Lesuur()
+            {
+                auto = auto2,
+                rijLeraar = rijLeraar,
+                tijd = 3310,
+                student = student
+
+            };
+            Dag dag = new Dag()
+            {
+                datum = DateTime.Now,
             };
 
             Student student2 = new Student()

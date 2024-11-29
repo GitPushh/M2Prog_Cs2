@@ -43,8 +43,16 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Auto.cs" />
+    <Compile Include="Dag.cs" />
+    <Compile Include="LesPakket.cs" />
+    <Compile Include="Lesuur.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="RijLeraarcs.cs" />
+    <Compile Include="RijTest.cs" />
+    <Compile Include="Student.cs" />
+    <Compile Include="TheorieTest.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />

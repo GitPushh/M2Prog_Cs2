@@ -10,5 +10,6 @@ namespace RijSchool
     {
         internal DateTime datum;
         internal Lesuur[] lesuren;
+        
     }
 }
