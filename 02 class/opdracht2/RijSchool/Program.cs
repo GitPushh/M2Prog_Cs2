@@ -92,8 +92,8 @@ namespace RijSchool
             Dag dag = new Dag()
             {
                 datum = DateTime.Now,
-                
-                
+                lesuren = new Lesuur[3]
+
             };
 
             Student student2 = new Student()
