@@ -64,11 +64,6 @@ namespace RijSchool
                 afnameDatum = DateTime.Now,
             };
 
-          
-
-
-
-
             Student student = new Student()
             {
                 naam = "fdfd",
@@ -97,6 +92,8 @@ namespace RijSchool
             Dag dag = new Dag()
             {
                 datum = DateTime.Now,
+                
+                
             };
 
             Student student2 = new Student()
@@ -106,6 +103,8 @@ namespace RijSchool
                 lesPakket = lespakket,
                 theorieTest = theorietest,
                 rijtest = rijtest
+                
+                
             };
         }
     }
