@@ -9,6 +9,16 @@ namespace Constuctors
     internal class QuizVraagAntwoord
     {
         internal QuizVraag vraag;
+        internal QuizVraag antwoord;
         internal bool goed;
+
+        internal QuizVraagAntwoord()
+        {
+            vraag = antwoord;
+            goed = false;
+        }
+
     }
 }
+
+
