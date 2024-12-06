@@ -8,11 +8,13 @@ namespace RijSchool
 {
     internal class Program
     {
+        
 
         static void Main(string[] args)
         {
             
-
+            Program program = new Program();
+            program.Run();
         }
 
         internal void Run()
@@ -73,6 +75,17 @@ namespace RijSchool
                 rijtest = rijtest
             };
 
+            Student student2 = new Student()
+            {
+                naam = "kas",
+                leeftijd = 25,
+                lesPakket = lespakket,
+                theorieTest = theorietest,
+                rijtest = rijtest
+
+
+            };
+
             Lesuur lesUur = new Lesuur()
             {
                 auto = auto1,
@@ -86,26 +99,17 @@ namespace RijSchool
                 auto = auto2,
                 rijLeraar = rijLeraar,
                 tijd = 3310,
-                student = student
+                student = student2
 
             };
             Dag dag = new Dag()
             {
                 datum = DateTime.Now,
-                lesuren = new Lesuur[3]
+                
 
             };
 
-            Student student2 = new Student()
-            {
-                naam = "kas",
-                leeftijd = 25,
-                lesPakket = lespakket,
-                theorieTest = theorietest,
-                rijtest = rijtest
-                
-                
-            };
+           
         }
     }
 }
