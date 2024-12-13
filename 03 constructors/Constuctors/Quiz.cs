@@ -25,12 +25,15 @@ namespace Constuctors
         internal void StelVraag(int vraagIndex)
         {
             QuizVraag vraag = vragen[vraagIndex];
+            QuizVraagAntwoord quizVraagAntwoord = new QuizVraagAntwoord(vraag);
         }
         internal Quiz(int aantalVragen)
         {
             vragen = new QuizVraag[aantalVragen];
             ingevuldeAntwoorden = new QuizVraagAntwoord[aantalVragen];
         }
+
+
     }
 
     
