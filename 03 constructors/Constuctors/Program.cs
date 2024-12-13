@@ -15,15 +15,9 @@ namespace Constuctors
             Console.Read();
         }
 
-        internal void VoegVraagToeOpIndex(int index, string vraag, string antwoord)
-        {
-            vraag = "is kaas lekker?";
-        }
-
-
         void Run()
         {
-            QuizVraag quizvraag = new QuizVraag("hier komt e vraag", "hier komt het antwoord");
+            QuizVraag quizvraag = new QuizVraag("hier komt de vraag", "hier komt het antwoord");
             Quiz quiz = new Quiz(10);
             quiz.VoegVraagToeOpIndex(0, quizvraag);
         }
