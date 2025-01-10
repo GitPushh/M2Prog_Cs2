@@ -36,6 +36,17 @@ namespace Lists
                 Console.WriteLine(character);
             }
 
+            List<double> reviews = new List<double>() { 50,342,40};
+
+            for (int i = 0; i < reviews.Count; i++)
+            {
+                reviews.Remove(342);
+                reviews.RemoveAt(0);
+                Console.WriteLine(reviews[i]);
+            }
+
+            
+
             Console.ReadLine();
         }
     }
