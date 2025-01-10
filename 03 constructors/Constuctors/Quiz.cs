@@ -26,6 +26,9 @@ namespace Constuctors
         {
             QuizVraag vraag = vragen[vraagIndex];
             QuizVraagAntwoord quizVraagAntwoord = new QuizVraagAntwoord(vraag);
+
+            Console.WriteLine(vraag);
+            
         }
         internal Quiz(int aantalVragen)
         {

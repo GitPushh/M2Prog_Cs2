@@ -12,7 +12,7 @@ namespace Constuctors
         internal QuizVraag antwoord;
         internal bool goed;
 
-        internal QuizVraagAntwoord()
+        internal QuizVraagAntwoord(QuizVraag vraag)
         {
             vraag = antwoord;
             goed = false;
