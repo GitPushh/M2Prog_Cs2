@@ -45,9 +45,38 @@ namespace Lists
                 Console.WriteLine(reviews[i]);
             }
 
-            
+            List<Pickup> pickups = new List<Pickup>();
+            for (int i = 0; i < 10; i++)
+            {
+                Pickup pickup = new Pickup()
+                {
+                    x = i,
+                    y = 0
+                };
+                pickups.Add(pickup);
+            }
+         ///  foreach (Pickup pickup in pickups)
+           // {
+             //  if(pickup.x == 4)
+               //  {
+             //    pickups.Remove(pickup);
+                    //}
+           //  }
+
+            for (int i = pickups.Count - 1;  i>= 0 ; i--)
+            {
+                pickups.RemoveAt(i);
+            }
+
 
             Console.ReadLine();
         }
     }
+
+    class Pickup 
+    {
+        internal int x, y;
+        
+    }
+
 }
