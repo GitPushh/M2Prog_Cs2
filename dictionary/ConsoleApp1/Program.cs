@@ -49,7 +49,6 @@ namespace ConsoleApp1
             ShowRoom(0, 0);
             ShowRoom(0, 1);
             ShowRoom(0, 2);
-            ShowRoom(0, 3);
 
 
 

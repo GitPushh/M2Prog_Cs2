@@ -27,7 +27,11 @@ namespace Forherhaling
                feedback = "prijzig maar lekker", 
                Sterren = 5 
             };
-            formulieren[1] = new formulier() { feedback = "prijzig fe lekker", Sterren = 3 };
+            formulieren[1] = new formulier() 
+            { 
+                feedback = "prijzig fe lekker", 
+                Sterren = 3 
+            };
 
             for (int i = 0; i < prijzen.Length; i++)
             {
@@ -43,7 +47,8 @@ namespace Forherhaling
 
             }
 
-            
+
+            Console.ReadLine();            
 
 
 

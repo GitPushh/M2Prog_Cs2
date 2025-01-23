@@ -55,28 +55,80 @@ namespace Lists
                 };
                 pickups.Add(pickup);
             }
-         ///  foreach (Pickup pickup in pickups)
-           // {
-             //  if(pickup.x == 4)
-               //  {
-             //    pickups.Remove(pickup);
-                    //}
-           //  }
+          
+
+            
 
             for (int i = pickups.Count - 1;  i>= 0 ; i--)
             {
-                pickups.RemoveAt(i);
+
+                    if (pickups[i].x == 4)
+                    {
+                        pickups.RemoveAt(i);
+                    Console.WriteLine($"Pickup {i} has been removed");
+                    }
+
+                Console.WriteLine($"{pickups[i].x} is still there");
+                
             }
 
 
             Console.ReadLine();
+           
+
+
+
         }
     }
 
     class Pickup 
     {
         internal int x, y;
-        
+
     }
+
+    class Mob 
+    {
+        internal bool isDead;
+        internal int hp = 10;
+
+        List<string> mobs = new List<string>() ;   
+        
+        Random random = new Random();
+        
+
+        void TakeDamage(int damage)
+        {
+            mobs.Add("kaas");
+            mobs.Add("kaas");
+            mobs.Add("kaas");
+
+
+            hp -= 5;
+            if (damage < 0) 
+            { 
+                isDead = true;  
+            }
+
+           
+        }
+
+        void kaas()
+        {
+            for (int i = 0; i < 100; i++)
+            {
+                foreach (string s in mobs)
+                {
+                    if(random.Next() < 30)
+                    {
+                        TakeDamage(1);
+                    }
+                }
+            }
+        }
+
+
+    }
+
 
 }
