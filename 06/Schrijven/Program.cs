@@ -22,7 +22,7 @@ namespace Schrijven
         void run()
         {
 
-            var favoriteGames = new FavoriteGames[]
+            FavoriteGames[] favoriteGames = new FavoriteGames[]
             {
                 new FavoriteGames { Games = "Fallout 4", Platform = "PC" },
                 new FavoriteGames { Games = "Fallout 76", Platform = "PC" },
